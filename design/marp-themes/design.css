@@ -1,0 +1,42 @@
+/*  @theme design*/
+
+@import 'default';
+
+section {
+    font-family: "Arial", "Hiragino Maru Gothic ProN";
+    font-size: 32px;
+    padding: 40px;
+}
+
+section.title h1{
+    color:Black;
+}
+
+section.title h2{
+    color: Gray;
+}
+
+section.infra h1{
+    color: black;
+    position: absolute;
+    top: 40px;
+}
+
+section.infra h2{
+    font-size: 32px;
+    color: black;
+    position: absolute;
+    top: 100px;
+}
+
+section.infra-1 h1{
+    color: black;
+    position: absolute;
+    top: 40px;
+}
+
+section.infra-2 h1{
+    color: black;
+    position: absolute;
+    top: 40px;
+}
