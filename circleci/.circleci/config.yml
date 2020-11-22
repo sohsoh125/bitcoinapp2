@@ -1,7 +1,12 @@
 version: 2.1
-jobs:
-  build:
+
+executors:
+  my-executor:
     docker:
       - image: cimg/node:lts
+
+jobs:
+  build:
+    executor: my-executor
     steps:
-      - run: echo "hello world"
+      - run: echo "Hello world2"
