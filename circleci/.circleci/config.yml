@@ -1,12 +1,16 @@
 version: 2.1
 
-executors:
-  my-executor:
+jobs:
+  test:
     docker:
       - image: cimg/node:lts
-
-jobs:
-  build:
-    executor: my-executor
     steps:
-      - run: echo "Hello world2"
+      - checkout
+      - run:
+          name: echo
+          command: echo "Hello word2" 
+
+workflows:
+    test_workflows:
+      jobs:
+        - test
