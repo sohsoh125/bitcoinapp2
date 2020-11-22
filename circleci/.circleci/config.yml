@@ -5,7 +5,6 @@ jobs:
     docker:
       - image: cimg/node:lts
     steps:
-      - checkout
       - run:
           name: echo
           command: echo "Hello word2" 
